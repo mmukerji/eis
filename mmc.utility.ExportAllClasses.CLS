@@ -34,6 +34,8 @@ This class is created to export all classes (excluding LUT, HL7, MAC, and SCH) f
  	//JLI 07/31/2015 
  	// The following export excludes the custom SQL table globals
  	// 2/16/2016 exclude InterSystems-shipped namespaces
+	// 05/21/2020 Monty Comment
+	
  	set currentns=$NAMESPACE
  	set tSC = ##class(%SYS.Namespace).ListAll(.namespaces)
  	set tInstance=##class(%SYS.System).GetInstanceName()
